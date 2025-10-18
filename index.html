@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xarcher - Backend Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <!-- Terminal Window -->
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-title">
+                <i class="fas fa-terminal terminal-icon"></i>
+                xarcher@turing-machine: ~
+            </div>
+            <div class="terminal-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="terminal-content">
+            <!-- Prompt -->
+            <div class="prompt-line">
+                <span class="prompt">xarcher@turing-machine:~$ neofetch</span>
+            </div>
+            
+            <!-- ASCII Art - 1/3 width -->
+            <div class="ascii-art">
+
+⠀⠀⠀⠀⠀⢀⡴⠁⠀⠀⣠⠎⠀⠀⠀⣴⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⣧⡀⠀⢰⣿⣄⠀⠀⣾⣿⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠙⠻⣿⣷⡌⠛⢿⣿⣦⠈⠛⢿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡸⠟⠀⠀⢀⠿⠃⠀⠀⠀⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣀⣀⣈⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⠀⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠿⣷⣦⡀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠈⠻⣷⡀⠀
+⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⣿⡇⠀
+⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⣀⣾⡿⠁⠀
+⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣸⣿⣿⠿⠛⠁⠀⠀
+⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠠⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀
+⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀
+            </div>
+            
+            <!-- Info Section - 2/3 width -->
+            <div class="info-section">
+                <div class="info-line">
+                    <span class="info-label">System</span>
+                    <span class="info-value">Human Linux (Backend Engineer Edition)</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Workflow</span>
+                    <span class="info-value">Keyboard-driven • Minimalist • Linux-first</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Programming</span>
+                    <span class="info-value">
+                        <span class="cyan">Java</span> • <span class="magenta">Golang</span> • <span class="warning">Rust</span>
+                    </span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Databases</span>
+                    <span class="info-value">Oracle • MySQL • PostgreSQL • MongoDB • Redis</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Messaging & Streaming</span>
+                    <span class="info-value">Kafka • RabbitMQ</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Infra</span>
+                    <span class="info-value">Docker • K8s • Git • CI/CD</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Blog</span>
+                    <span class="info-value"><a href="https://blog.xarcher.dev" target="_blank">blog.xarcher.dev</a></span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">GitHub</span>
+                    <span class="info-value"><a href="https://github.com/xarcher" target="_blank">github.com/xarcher</a></span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Powered by</span>
+                    <span class="info-value coffee-color">Coffee ☕ & Curiosity</span>
+                </div>
+
+                <div class="info-line">
+                    <span class="info-label">Quote</span>
+                    <span class="info-value">"Build reliable systems, not complex ones."</span>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- Prompt -->
+            <div class="prompt-line">
+                <span class="prompt">xarcher@turing-machine:~$</span>
+                <span class="cursor"></span>
+                <span style="color: var(--text-dim); margin-left: 10px; font-size: 12px;">// fueled by coffee</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
